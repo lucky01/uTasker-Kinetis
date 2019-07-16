@@ -2,17 +2,39 @@
 <workbench version="2.0">
 <workbenchAdvisor/>
 <window>
-<fastViewData fastViewLocation="1024"/>
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="org.eclipse.debug.ui.ExpressionView"/>
+<orientation position="512" view="org.coocox.codebugger.trace.ui.traceview"/>
+<orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
+<orientation position="512" view="org.eclipse.debug.ui.VariableView"/>
+</fastViewData>
 <perspectiveBar/>
 <page aggregateWorkingSetId="Aggregate for window 1400544907787" focus="true" label="Workspace - CooCox CoBuilder">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="app_hw_kinetis.h" partName="app_hw_kinetis.h" path="F:/STM32/git/uTasker-Kinetis/Applications/uTaskerSerialBoot/app_hw_kinetis.h" title="app_hw_kinetis.h" tooltip="F:/STM32/git/uTasker-Kinetis/Applications/uTaskerSerialBoot/app_hw_kinetis.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/app_hw_kinetis.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="136987" selectionTopPixel="27965"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="config.h" partName="config.h" path="F:/STM32/git/uTasker-Kinetis/Applications/uTaskerSerialBoot/config.h" title="config.h" tooltip="F:/STM32/git/uTasker-Kinetis/Applications/uTaskerSerialBoot/config.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/config.h"/>
+<editorState selectionHorizontalPixel="32" selectionLength="10" selectionOffset="12523" selectionTopPixel="1860"/>
+</editor>
+<editor id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
+</input>
+</editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
@@ -20,9 +42,10 @@
 <expanded>
 <element path="/uTaskerSerialBoot"/>
 <element path="/uTaskerSerialBoot/Applications"/>
+<element path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot"/>
 </expanded>
 <selection>
-<element path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot"/>
+<element path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/config.h"/>
 </selection>
 </viewState>
 </view>
@@ -68,6 +91,8 @@
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.coocox.userspace.actionSet"/>
+<alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
 <hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryAction"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
 <hide_menu_item_id id="org.coocox.codebugger.configuration.ShowDisassemblyAction"/>
@@ -87,6 +112,7 @@
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -97,9 +123,11 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1f7b707" ratio="0.66833544" ratioLeft="534" ratioRight="265" relationship="4" relative="org.eclipse.ui.internal.ViewStack@18d2879">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="org.eclipse.ui.internal.ViewStack@18d2879">
@@ -237,57 +265,83 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="0" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="0" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/app_hw_kinetis.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/config.h"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
+</editor>
+</editors>
+<item historyLabel="Configuration" index="0"/>
+<item historyLabel="Configuration" index="1"/>
+<item historyLabel="Configuration" index="2"/>
+<item historyLabel="app_hw_kinetis.h" index="3">
+<position info="not_deleted" x="81870" y="8"/>
+</item>
+<item historyLabel="config.h" index="4">
+<position info="not_deleted" x="12523" y="10"/>
+</item>
+<item historyLabel="Configuration" index="5"/>
+<item active="true" historyLabel="app_hw_kinetis.h" index="3">
+<position info="not_deleted" x="81870" y="8"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
+<persistable>
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="config.h" tooltip="uTaskerSerialBoot/Applications/uTaskerSerialBoot/config.h">
+<persistable path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/config.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="app_hw_kinetis.h" tooltip="uTaskerSerialBoot/Applications/uTaskerSerialBoot/app_hw_kinetis.h">
+<persistable path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/app_hw_kinetis.h"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="utaskerstm32.ld" tooltip="F:\STM32\git\uTasker-Kinetis\Applications\uTaskerSerialBoot\gnu_stm32\utaskerstm32.ld">
+<persistable uri="file:/F:/STM32/git/uTasker-Kinetis/Applications/uTaskerSerialBoot/gnu_stm32/utaskerstm32.ld"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="utaskerstm32_f4.ld" tooltip="F:\STM32\git\uTasker-Kinetis\Applications\uTaskerSerialBoot\gnu_stm32\utaskerstm32_f4.ld">
+<persistable uri="file:/F:/STM32/git/uTasker-Kinetis/Applications/uTaskerSerialBoot/gnu_stm32/utaskerstm32_f4.ld"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="utaskerstm32_f4_16k.ld" tooltip="F:\STM32\git\uTasker-Kinetis\Applications\uTaskerSerialBoot\gnu_stm32\utaskerstm32_f4_16k.ld">
+<persistable uri="file:/F:/STM32/git/uTasker-Kinetis/Applications/uTaskerSerialBoot/gnu_stm32/utaskerstm32_f4_16k.ld"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mass_storage.c" tooltip="uTaskerSerialBoot/uTasker/utFAT/mass_storage.c">
+<persistable path="/uTaskerSerialBoot/uTasker/utFAT/mass_storage.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="disk_loader.c" tooltip="uTaskerSerialBoot/Applications/uTaskerSerialBoot/disk_loader.c">
+<persistable path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/disk_loader.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="serial_loader.c" tooltip="uTaskerSerialBoot/Applications/uTaskerSerialBoot/serial_loader.c">
+<persistable path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/serial_loader.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="types.h" tooltip="uTaskerSerialBoot/Applications/uTaskerSerialBoot/types.h">
+<persistable path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/types.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="app_hw_stm32.h" tooltip="uTaskerSerialBoot/Applications/uTaskerSerialBoot/app_hw_stm32.h">
+<persistable path="/uTaskerSerialBoot/Applications/uTaskerSerialBoot/app_hw_stm32.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="spi_flash_kinetis_stmicro.h" tooltip="uTaskerSerialBoot/Hardware/spi_flash_kinetis_stmicro.h">
+<persistable path="/uTaskerSerialBoot/Hardware/spi_flash_kinetis_stmicro.h"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="link.ld" tooltip="C:\MJBC\Companies\Waio Inc\Ethernet_port_2\EthernetPort2\Applications\Waio_APB\CooCox\link.ld">
 <persistable uri="file:/C:/MJBC/Companies/Waio%20Inc/Ethernet_port_2/EthernetPort2/Applications/Waio_APB/CooCox/link.ld"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="application.c" tooltip="uTaskerV1.4/Applications/uTaskerV1_4/application.c">
-<persistable path="/uTaskerV1.4/Applications/uTaskerV1_4/application.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="STM32.c" tooltip="uTaskerV1.4/Hardware/STM32.c">
-<persistable path="/uTaskerV1.4/Hardware/STM32.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="TaskConfig.h" tooltip="uTaskerV1.4/Applications/uTaskerV1_4/TaskConfig.h">
-<persistable path="/uTaskerV1.4/Applications/uTaskerV1_4/TaskConfig.h"/>
 </file>
 </mruList>
 </workbench>

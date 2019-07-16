@@ -120,7 +120,7 @@
 
     //#define EMCRAFT_K61F150M                                           // K processors Cortex M4 with Ethernet, USB, encryption, tamper, key storage protection area - http://www.utasker.com/kinetis/EMCRAFT_K61F150M.html
 
-      #define FRDM_K64F                                                  // next generation K processors Cortex M4 with Ethernet, USB, encryption, tamper, key storage protection area - freedom board http://www.utasker.com/kinetis/FRDM-K64F.html
+    //#define FRDM_K64F                                                  // next generation K processors Cortex M4 with Ethernet, USB, encryption, tamper, key storage protection area - freedom board http://www.utasker.com/kinetis/FRDM-K64F.html
     //#define TWR_K64F120M                                               // tower board http://www.utasker.com/kinetis/TWR-K64F120M.html
     //#define HEXIWEAR_K64F                                              // hexiwear - wearable development kit for IoT (K64FN1M0VDC12 main processor) http://www.hexiwear.com/
     //#define TEENSY_3_5                                                 // USB development board with K64FX512 - http://www.utasker.com/kinetis/TEENSY_3.5.html
@@ -153,7 +153,7 @@
     //#define NUCLEO_L496RG                                              // evaluation board with STM32L496ZGT6U
 
     //#define ST_MB913C_DISCOVERY                                        // discovery board with STM32F100RB
-      #define ARDUINO_BLUE_PILL                                          // board with STM32F103C8T6 (48 pin LQFP, 64k Flash/20k SRAM performance line processor)
+    //#define ARDUINO_BLUE_PILL                                          // board with STM32F103C8T6 (48 pin LQFP, 64k Flash/20k SRAM performance line processor)
     //#define STM3210C_EVAL                                              // evaluation board with STM32F107VCT
     //#define STM32_P207                                                 // olimex prototyping board with STM32F207ZET6
     //#define STM32F746G_DISCO                                           // evaluation board with STM32F746NGH6
