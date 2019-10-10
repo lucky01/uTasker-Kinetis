@@ -2,7 +2,7 @@
     Mark Butcher    Bsc (Hons) MPhil MIET
 
     M.J.Butcher Consulting
-    Birchstrasse 20f,    CH-5406, Rütihof
+    Birchstrasse 20f,    CH-5406, Rï¿½tihof
     Switzerland
 
     www.uTasker.com    Skype: M_J_Butcher
@@ -58,7 +58,7 @@
     #define MAX_WAIT_SD_CARD          3                                  // {14} if no SD card is not detected after 4s the existing application is started
 #endif
 
-#define WILDCARD_FILES                                                   // {21} allow wildcard name matching to be used
+//#define WILDCARD_FILES                                                   // {21} allow wildcard name matching to be used
 #if defined WILDCARD_FILES
     #undef _REMOVE_FORMATTED_OUTPUT
 #endif
@@ -190,7 +190,7 @@
         #elif (defined K02F100M || defined K12D50M) && defined DEV5
             #define UTASKER_APP_END           (unsigned char *)(UTASKER_APP_START + (108 * 1024)) // end of application space - after maximum application size
         #else
-            #define UTASKER_APP_END           (unsigned char *)(UTASKER_APP_START + (128 * 1024)) // end of application space - after maximum application size
+            #define UTASKER_APP_END           (unsigned char *)(1024 * 1024) // end of application space - after maximum application size
         #endif
     #endif
     #if !defined TEENSY_3_1 && !defined TEENSY_LC                        // warning: do not use mass erase with Teensy devices since their loader doesn't support the completely erased state and requires an external loader to recoved to the unsecured flash state
@@ -233,10 +233,10 @@
                 #define NEW_SOFTWARE_FILE "sd_card_aes256_coded.bin"
               //#define NEW_SOFTWARE_FILE "encrypted.bin"
             #else
-                #define NEW_SOFTWARE_FILE "software.bin"
+                #define NEW_SOFTWARE_FILE "update.bin"
             #endif
-            #define VALID_VERSION_MAGIC_NUMBER   0x1234
-            #define _SECRET_KEY       {0xa7, 0x48, 0xb6, 0x53, 0x11, 0x24}
+            //#define _SECRET_KEY       {0xa7, 0x48, 0xb6, 0x53, 0x11, 0x24}
+            #define VALID_VERSION_MAGIC_NUMBER   0x4B36
         #endif
     #endif
 #elif defined _LPC23XX

@@ -2,7 +2,7 @@
     Mark Butcher    Bsc (Hons) MPhil MIET
 
     M.J.Butcher Consulting
-    Birchstrasse 20f,    CH-5406, Rütihof
+    Birchstrasse 20f,    CH-5406, Rï¿½tihof
     Switzerland
 
     www.uTasker.com    Skype: M_J_Butcher
@@ -127,7 +127,7 @@
     //#define TWR_K65F180M                                               // tower board http://www.utasker.com/kinetis/TWR-K65F180M.html
     //#define K66FX1M0                                                   // development board with K66FX1M0
     //#define FRDM_K66F                                                  // freedom board http://www.utasker.com/kinetis/FRDM-K66F.html
-    //#define TEENSY_3_6                                                 // USB development board with K66FX1M0 - http://www.utasker.com/kinetis/TEENSY_3.6.html
+    #define TEENSY_3_6                                                 // USB development board with K66FX1M0 - http://www.utasker.com/kinetis/TEENSY_3.6.html
 
     //#define TWR_K70F120M                                               // K processors Cortex M4 with graphical LCD, Ethernet, USB, encryption, tamper - tower board http://www.utasker.com/kinetis/TWR-K70F120M.html
     //#define K70F150M_12M                                               // development board with 150MHz K70 and 12MHz crystal
@@ -739,7 +739,12 @@
     #define KINETIS_K60                                                  // specify the sub-family
     #define KINETIS_REVISION_2
     #define KINETIS_K66                                                  // extra sub-family type precision
-  //#define USB_HS_INTERFACE                                             // use HS interface rather than FS interface
+	#define SDCARD_SUPPORT
+	#define DEVICE_WITHOUT_ETHERNET
+	#define DEVICE_WITHOUT_USB
+	#define DELETE_SDCARD_FILE_AFTER_UPDATE
+	#define UTFAT_WRITE
+//#define USB_HS_INTERFACE                                             // use HS interface rather than FS interface
 #elif defined TWR_K70F120M
     #define TARGET_HW       "TWR-K70F120M Kinetis"
     #define KINETIS_K_FPU                                                // part with floating point unit
@@ -1404,7 +1409,7 @@
 
             #define WEB_PARAMETER_GENERATION                             // support of parameter generating (eg. manipulating select and adding values)
             #define WEB_PARAMETER_HANDLING                               // support  handling of received web parameters
-            #define WEB_PARSER_START          '£'                        // this symbol is used in Web pages to instruct parsing to begin
+            #define WEB_PARSER_START          'ï¿½'                        // this symbol is used in Web pages to instruct parsing to begin
             #define WEB_INSERT_STRING         'v'
             #define WEB_DISABLE_FIELD         'D'
             #define WEB_NOT_DISABLE_FIELD     'd'
@@ -1416,11 +1421,11 @@
                 #define FILE404_IN_PROG                                  // fixed FILE404 in Code (no NE64 support since it pages the file system in memory)
             #endif
 
-            #define FILE_404_CONTENT        "<html><head><title>£vN0 Loader</title></head><body bgcolor=#d0d000 text=#000000 topmargin=3 marginheight=3><center><td valign=top class=h> \
-<font color=#ff0000 style=font-size:30px><b style='mso-bidi-font-weight:normal'>£vN0</font> - Loader (£vV0)</b></td><br><td align=left><br><br> \
-<form action=webpage.html name=e1><input type=submit value=""Erase-Application"" name=e>Enter Password <input maxLength=17 size=17 name=c1 value=""£ve0""> £vV1</form> \
-<form action=0S.bin enctype=""multipart/form-data"" method=""post""><p><input type=""file"" name=""datafile"" size=""30""><input type=""submit"" value=""Upload"" £ds0></p></form> \
-<br><form action=webpage.html name=e0><input type=submit value=""Mass-Erase"" name=e>Enter Password <input maxLength=17 size=17 name=c0 value=""£ve0""></form> \
+            #define FILE_404_CONTENT        "<html><head><title>ï¿½vN0 Loader</title></head><body bgcolor=#d0d000 text=#000000 topmargin=3 marginheight=3><center><td valign=top class=h> \
+<font color=#ff0000 style=font-size:30px><b style='mso-bidi-font-weight:normal'>ï¿½vN0</font> - Loader (ï¿½vV0)</b></td><br><td align=left><br><br> \
+<form action=webpage.html name=e1><input type=submit value=""Erase-Application"" name=e>Enter Password <input maxLength=17 size=17 name=c1 value=""ï¿½ve0""> ï¿½vV1</form> \
+<form action=0S.bin enctype=""multipart/form-data"" method=""post""><p><input type=""file"" name=""datafile"" size=""30""><input type=""submit"" value=""Upload"" ï¿½ds0></p></form> \
+<br><form action=webpage.html name=e0><input type=submit value=""Mass-Erase"" name=e>Enter Password <input maxLength=17 size=17 name=c0 value=""ï¿½ve0""></form> \
 <br></font></td></body></html>";
 
             #define _FIXED_WEB_PAGE_404                                  // force 404 error on every file served

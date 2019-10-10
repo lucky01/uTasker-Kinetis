@@ -2,7 +2,7 @@
     Mark Butcher    Bsc (Hons) MPhil MIET
 
     M.J.Butcher Consulting
-    Birchstrasse 20f,    CH-5406, Rütihof
+    Birchstrasse 20f,    CH-5406, Rï¿½tihof
     Switzerland
 
     www.uTasker.com    Skype: M_J_Butcher
@@ -114,8 +114,9 @@ static void fnJumpToApplication(int iGo);                                // {3}
 /* =================================================================== */
 /*                             constants                               */
 /* =================================================================== */
-
+#ifdef _SECRET_KEY
 static const unsigned char ucSecretKey[] = _SECRET_KEY;
+#endif
 
 /* =================================================================== */
 /*                     global variable definitions                     */
@@ -466,7 +467,9 @@ static int fnUpdateSoftware(int iAppState, UTFILE *ptr_utFile, UPLOAD_HEADER *pt
         break;
 
     case STATE_CHECK_SECRET_KEY:
+#ifdef _SECRET_KEY
         usCRC = fnCRC16(usCRC, (unsigned char *)ucSecretKey, sizeof(ucSecretKey)); // add the secret key
+#endif
         if (usCRC == ptrFile_header->usCRC) {                            // content is valid
             _DISPLAY_VALID_CONTENT();                                    // optionally display that the content is valid
             if (iFlashMismatch != 0) {                                   // valid new code which needs to be programmed
@@ -568,7 +571,9 @@ static int fnUpdateSoftware(int iAppState, UTFILE *ptr_utFile, UPLOAD_HEADER *pt
         }
         else {
             usCRC = fnCRC16(usCRC, fnGetFlashAdd(ptrInternalFlash), ulFileLength); // last block
+#ifdef _SECRET_KEY
             usCRC = fnCRC16(usCRC, (unsigned char *)ucSecretKey, sizeof(ucSecretKey)); // add the secret key
+#endif
     #if defined ENCRYPTED_CARD_CONTENT                                   // {9}
             if (usCRC == ptrFile_header->usRAWCRC)
     #else
